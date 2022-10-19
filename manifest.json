@@ -1,0 +1,17 @@
+{
+  "name": "Connect-Web developer tools",
+  "description": "Connect-Web interceptor for chrome",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["scripts/content.ts"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "html/hello.html",
+    "default_icon": "images/connect.png"
+  }
+}
